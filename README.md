@@ -1,4 +1,4 @@
-##Description:
+## Description:
 
 Proposing the Project FOODFIN is to solve the real-world problem of immigrants and
 specially for students that they are looking for authentic food of their home country.
@@ -16,6 +16,6 @@ The document will describe in detail, the interfaces of the system, what the sys
 dowith all the test cases. The intended audience of this document are the concerned faculty members and
 users(Students, Faculty members).
 
-##Technology Used:
+## Technology Used:
 
 Java,Firebase
