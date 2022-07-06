@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "639405780002",
+    "project_id": "foodiffin-d5a05",
+    "storage_bucket": "foodiffin-d5a05.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:639405780002:android:6c3fefbda3d32a2f5d6e7b",
+        "android_client_info": {
+          "package_name": "com.example.foodiffin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "639405780002-vm3sfa1l23drjmk0pd5c50i1bpr1fb4t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCj6Zjluw9hQ8X0eiV-KdEupwxFnjvYUHY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "639405780002-vm3sfa1l23drjmk0pd5c50i1bpr1fb4t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

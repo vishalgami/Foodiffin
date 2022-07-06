@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.foodiffin.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/home_fragment" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.foodiffin.ui.profile.ProfileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/profile_fragment" />
+
+    <fragment
+        android:id="@+id/nav_contact"
+        android:name="com.example.foodiffin.ui.contact.ContactFragment"
+        android:label="@string/menu_contact"
+        tools:layout="@layout/contact_fragment" />
+    <fragment
+        android:id="@+id/myCartFragment"
+        android:name="com.example.foodiffin.ui.cart.MyCartFragment"
+        android:label="@string/menu_cart"
+        tools:layout="@layout/fragment_my_cart" />
+</navigation>

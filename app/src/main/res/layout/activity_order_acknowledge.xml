@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.OrderAcknowledge"
+    android:background="@drawable/gradient">
+
+    <LinearLayout
+        android:id="@+id/cardDetailsLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                app:layout_constraintEnd_toStartOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@mipmap/cloudicon"
+                tools:layout_editor_absoluteY="265dp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:lineSpacingExtra="8sp"
+                android:text="FOODIFFIN"
+                android:textColor="@color/appNameText"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/thankYouTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="10dp"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:fontFamily="sans-serif-medium"
+            android:text="Thank You for you Order"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/infoTextViewPayment"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="You will receive a confirmation email shortly.\nIf you have any questions\nContact Us On: +1 999-888-7777"
+            android:textSize="14dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/thankYouTextView"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+
+            android:textColor="@color/lightGrey"/>
+
+        <TableLayout
+            android:id="@+id/cartTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:padding="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            app:layout_constraintTop_toBottomOf="@id/infoTextViewPayment"
+            android:background="@color/background">
+
+            <TextView
+                android:id="@+id/summaryTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Order Summary"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/cartTable"
+                android:textSize="20sp" />
+
+            <TableRow android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/orderNumbertextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:textSize="15sp"
+                    android:layout_weight="3"
+                    android:text="Order Number:" />
+                <TextView
+                    android:id="@+id/orderNumber"
+                    android:textColor="@color/blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:text="111" />
+            </TableRow>
+            <TableRow android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/orderDatetextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:textSize="15sp"
+                    android:layout_weight="3"
+                    android:text="Order Date" />
+                <TextView
+                    android:id="@+id/orderDate"
+                    android:textColor="@color/blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:text="222" />
+            </TableRow>
+            <TableRow android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/orderDescriptiontextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:textSize="15sp"
+                    android:layout_weight="3"
+                    android:text="Order Description" />
+                <TextView
+                    android:id="@+id/orderDescription"
+                    android:textColor="@color/blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:text="222" />
+            </TableRow>
+            <TableRow android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/orderTotaltextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:textSize="15sp"
+                    android:layout_weight="3"
+                    android:text="Order Total" />
+                <TextView
+                    android:id="@+id/orderTotal"
+                    android:textColor="@color/blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:text="222" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnOrderAgain"
+        android:text="Order Again"
+        android:layout_width="300sp"
+        android:layout_height="60sp"
+        android:gravity="center"
+        android:backgroundTint="@color/btn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
